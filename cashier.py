@@ -163,9 +163,11 @@ def delete_transaksi():
                 temp.write(str(qty) + '\n')
                 temp.write(str(harga) + '\n')
                 temp.write(str(subtotal) + '\n')
-                found = True
+
             else:
-                notrans = kasir_file.readline()
+                found = True
+
+            notrans = kasir_file.readline()
 
         kasir_file.close()
         temp.close()
